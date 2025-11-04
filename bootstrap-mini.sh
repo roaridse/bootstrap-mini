@@ -25,6 +25,9 @@ gh api \
   repos/roaridse/dotfiles/contents/bootstrap.sh \
   --jq '.content' | base64 -d > /tmp/bootstrap.sh
 
+gh auth setup-git
+
+
 chmod +x /tmp/bootstrap.sh
 
 echo "🚀 Kjører bootstrap.sh"
